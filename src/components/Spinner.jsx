@@ -1,13 +1,13 @@
-import React from 'react';
+import React from "react";
 
 const Spinner = () => {
-    return (
-        <div className="d-flex justify-content-center">
-            <div className="spinner-border my-3" role="status">
-                <span className="visually-hidden"></span>
-            </div>
-        </div>
-    )
-  }
+  return (
+    <div className="d-flex justify-content-center">
+      <div className="spinner-border my-3" role="status">
+        <span className="visually-hidden"></span>
+      </div>
+    </div>
+  );
+};
 
-export default Spinner
+export default Spinner;

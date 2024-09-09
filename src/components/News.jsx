@@ -28,7 +28,7 @@ export default function News(props) {
 
   useEffect(() => {
     updateNews();
-  }, [])
+  }, []);
 
   const capitalizeFirstLetter = (str) => {
     return str.charAt(0).toUpperCase() + str.slice(1);
@@ -50,8 +50,7 @@ export default function News(props) {
   return (
     <>
       <h1 className="text-center">
-        NewsMonkey - Top {capitalizeFirstLetter(props.category)}{" "}
-        Headlines
+        NewsMonkey - Top {capitalizeFirstLetter(props.category)} Headlines
       </h1>
       {loading && <Spinner />}
       <InfiniteScroll
@@ -92,11 +91,11 @@ export default function News(props) {
   );
 }
 
-News.defaultProps = {
-  country: "us",
-  pageSize: 5,
-  category: "general",
-};
+// News.defaultProps = {
+//   country: "us",
+//   pageSize: 5,
+//   category: "general",
+// };
 
 News.propTypes = {
   country: PropTypes.string,
